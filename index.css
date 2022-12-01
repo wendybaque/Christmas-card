@@ -1,0 +1,86 @@
+body {
+    width : 80%;
+    margin: 10% auto;
+    font-family: sans-serif;
+  }
+  
+  #card-container {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.50);
+  }
+  
+  #card-container img {
+    width: auto;
+    height: 100%;
+  }
+  
+  #card-text {
+    width: 100%;
+    text-align: center;
+    font-family: "Brush Script MT", cursive;
+    position: absolute;
+    top: 100px;
+    white-space: pre-wrap;
+    font-size: 40px;
+    color: white;
+  }
+  
+  #background-choices-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .background-choice {
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.50);
+  }
+  
+  .background-choice img {
+    width: auto;
+    height: 100%;
+  }
+  
+  #user-input {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  textarea {
+    margin-top: 15px;
+    padding: 10px;
+    resize: vertical;
+    overflow: auto;
+    border: 2px solid #39424e;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.50);
+  }
+  
+  .pen {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.50);
+  }
+
+  button {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.50);
+    border:none;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+  }
+  

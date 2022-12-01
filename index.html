@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Carte de voeux personnalisée</title>
+    <link rel="stylesheet" href="index.css" />
+    
+  </head>
+  <body>
+    <div id="card-container">
+      <img
+        src="https://cdn.pixabay.com/photo/2017/12/18/18/37/christmas-3026685_1280.jpg"
+        alt="card-background"
+      />
+      <p id="card-text">Votre texte ici</p>
+    </div>
+
+    <div id="background-choices-container">
+      <div class="background-choice">
+        <img
+          src="https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_1280.jpg"
+          alt="new year"
+        />
+      </div>
+      <div class="background-choice">
+        <img
+          src="https://cdn.pixabay.com/photo/2016/11/29/13/37/christmas-1869902_1280.jpg"
+          alt="new year"
+        />
+      </div>
+      <div class="background-choice">
+        <img
+          src="https://cdn.pixabay.com/photo/2017/11/07/20/43/christmas-tree-2928142_1280.jpg"
+          alt="new year"
+        />
+      </div>
+    </div>
+
+    <div id="user-input">
+      <label for="user-text">Ecrivez un message personnalisé ici :</label>
+      <textarea
+        name="user-text"
+        id="user-text"
+        rows="3"
+        oninput="updateText()"
+      ></textarea>
+      <p>Choisissez la couleur de votre texte :</p>
+      <div id="user-color">
+        <div
+          class="pen"
+          style="background-color: turquoise"
+          onclick="changeColor('turquoise')"
+        ></div>
+        <div
+          class="pen"
+          style="background-color: red"
+          onclick="changeColor('red')"
+        ></div>
+        <div
+          class="pen"
+          style="background-color: blue"
+          onclick="changeColor('blue')"
+        ></div>
+        <div
+          class="pen"
+          style="background-color: green"
+          onclick="changeColor('green')"
+        ></div>
+      </div>
+      <button>Partagez votre carte</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
